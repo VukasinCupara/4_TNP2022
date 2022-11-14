@@ -67,6 +67,69 @@ Uspostavljanje komunikacije među uređajima vrši se direktno, bez unapred obez
 Na slici \ref{fig:adhoc} prikazan je dijagram Ad-Hoc mreže.
 \newpage
 
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.35]{AdHoc.png}
+\end{center}
+\caption{Ad-Hoc \cite{AdHoc}}
+\label{fig:adhoc}
+\end{figure}
+
+
+
+    \subsection{Ćelijske mreže}
+ Kod mreža sa ćelijskom topologijom uređaji ne mogu da komuniciraju direktno između sebe, već je neophodno da se sva komunikacija vrši preko unapred postavljenih pristupnih stanica. U ovakvim mrežama za komuniciranje je neophodno da postoji određena infrastruktura. Izras ćelijske mreže odnosi se na to da se jedno celo geografsko područje deli na određeni broj manjih područja pokrivenosti pristupnih stanica, odnosno ćelija.
+
+    \subsection{Point-to-point}
+\textbf{Point to point} mreže omogućavaju komunikaciju tačno dva uređaja bez potrebe za dodatnom infrastrukturom. Ovakve mreže koriste se uglavnom za privremenu komunikaciju dva uređaja koja se međusobno nalaze na maloj udaljenosti.
+
+\section{Bezbednost}	
+\label{sec:Bezbednost}
+
+Kao važna karakteristika svake računarske mreže ubraja se I bezbednost iste. Različite vrste mreža podlozne su različitim napadima I obezbeđene su različitim metodama zaštite.
+Uopšteno posmatrajući postoje tri različite vrste napada na mrežu (bežičnu mrežu):
+
+\begin{itemize}
+    \item Napadnuta fizička sigurnost mreže
+    \item Neautorizovani napadi i prisluškivanje
+    \item Ugrožavanje bezbednosti unutar same mreže od strane autorizovanog korisnika
+\end{itemize}
+
+
+\section{Vrste bežičnih mreža koje koriste mobilni telefoni}
+\label{vrste_mreza_na_telefonu}
+
+Nakon uspostavljanja osnovnih podela I karakteristika bežičnih mreža uopšteno, treba posmatrati I različite standarde, odnosno različite tehnologije bežične komunikacije koje koriste mobilni telefoni. Ipak pre pominjanja samih tehnologija, neophodno je izvršiti još jednu kategorizaciju istih prema nameni I području koje iste pokrivaju:
+
+\begin{itemize}
+    \item WWAN (Wireless Wide Area Network)
+    \item WLAN (Wireless Local Area Network)
+    \item WPAN (Wireless Personal Area Network)
+\end{itemize}
+    \subsection{WWAN (Wireless Wide Area Network)}
+WWAN je mreža koja pokriva veliko geografsko područje. Ona vrši komunikaciju rastavljanjem “poruke” (podatka koji želimo da pošaljemo) na veliki broj malih delova koji se nazivaju paketi. U WWAN spadaju mrežne tehnologije poput: \textbf{LTE}, \textbf{GSM}, \textbf{CDPD}. 
+        \subsubsection{GSM}
+GSM tehnologija je prva verzija razmene podataka koja se (u svojoj novijoj realizaciji) I dalje koristi pri povezivanju telefona na mobilnu mrežu. Ovo je druga generacija mobilnih mreža (tzv. 2G). Razvijena je početkom devedesetih godina prošlog veka.
+GSM koristi ćelijsku topologiju mreže. Upotrebljava se više baznih stanica koje pokrivaju svoja geografska područja (do 35 kilometara dometa). Ovo je prva verzija mobilne mreže koja koristi digitalnu tehnologiju za komunikaciju.
+Svaka bazna stanica ima frekvenciju na kojoj radi I oblast koju pokriva (ćeliju). Ćelije se šematski prikazuju kao pravilni šestougaonici, čime se omogućava da su sve susedne stanice na istoj udaljenosti. Pri ovoj podeli, svake dve susedne stanice moraju da koriste različite frekvencije kako ne bi smetale jedna drugoj. \\
+Glavne usluge koje GSM pruža su:
+\begin{itemize}
+    \item Prenos govora
+    \item Prenos podataka (9.6 Kb/s)
+    \item Slanje SMS (Short Message Service) poruka
+\end{itemize}
+Mobilni uređaj, koji pristupa mreži,  sastoji se od samog mobilnog telefona (terminala) i memorijske kartice, takozvane SIM (Subscriber Identity Module) kartice
+\begin{itemize}
+    \item Mobilni uređaj se jednoznačno identifikuje IMEI brojem (International Mobile
+Equipment Identity) tj. međunarodnim brojem za identifikaciju mobilnog uređaja.
+    \item SIM kartica sadrži međunarodni broj za identifikaciju pretplatnika IMSI
+(International Mobile Subscriber Identity) kojim se pretplatnik najavljuje na sistem,
+zatim, tajni kod za verifikaciju i druge informacije.
+    \item IMEI i IMSI brojevi su nezavisni. SIM kartica može da se zaštiti od neovlašćenog
+korišćenja lozinkom ili ličnim identifikacionim brojem.
+\end{itemize} 
+Na slici \ref{fig:GSM} je prikazan uprošćen dijagram GSM mreže.
+
 
 
 
