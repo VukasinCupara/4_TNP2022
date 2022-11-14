@@ -1,0 +1,93 @@
+\documentclass[a4paper]{article}
+
+\usepackage{color}
+\usepackage{url}
+\usepackage[T2A]{fontenc} 
+\usepackage[utf8]{inputenc} 
+\usepackage{graphicx}
+
+\usepackage[english,serbian]{babel}
+
+
+\usepackage[unicode]{hyperref}
+\hypersetup{colorlinks,citecolor=green,filecolor=green,linkcolor=blue,urlcolor=blue}
+
+\newtheorem{primer}{Primer}[section]
+
+\begin{document}
+
+\title{Poređenje različitih vrsta prenosa podataka na mobilnom telefonu\\ \small{Seminarski rad u okviru kursa\\Tehničko i naučno pisanje\\ Matematički fakultet}}
+
+\author{Andrija Soković\\ 
+\small{andrijasokovic@gmail.com}
+\and
+Nenad Pešić\\
+\small{pesicnenad28@gmail.com}
+\and
+Vojin Knežević\\
+\small{knezevic.vojin@gmail.com}
+\and 
+Vukašin Cupara\\
+\small{vukasin.cupara2003@gmail.com} 
+}
+\date{14.~novembar 2022.}
+\maketitle
+
+\abstract{
+Ovaj tekst obuhvata vrste prenosa podataka na mobilnom telefonu. Upoznaćemo se sa različitim tipovima prenosa, naučićemo kako one funkcionišu i gde ih možemo sresti. Moramo spomenuti da iako na prvo pogled nam tematika ne zvuči komplikovano, ona je zaista kompleksna i nije ni malo jednostavna.
+
+\tableofcontents
+
+\newpage
+
+\section{Uopšteno o prenosu podataka u računarstvu}
+\label{sec:uvod}
+\textbf{Razmena podataka} predstavlja proces pouzdanog slanja podataka izmedju dva ili većeg broja učesnika u komuniciranju. Ovim procesom moguće je slati mnogobrojne vrste podataka od kojih su najčešći: računarski fajlovi, digitalizovani signali slike, telemetrijski merni rezultati (npr. Podaci o merenjima temperature sa nekog senzora), centralne baze za nadgledanje itd.
+U osnovnom obliku razmene podataka moguće je ostvariti komunikaciju između dva direktno povezana računara putem odgovarajućeg medijuma za prenos. Međutim, vrlo često, ovakav vid komunikacije nije dovoljan i pojavljuje se potreba za povezivanjem više računara. Tada je najpovoljnije povezati uređaj u neku već postojeću mrežu koja je organizovana po određenim standardima. \\
+Iako ne postoji opšta (zvanična) kategorizacija računarskih mreža, neformalno, mi računarske mreže možemo podeliti u dve grupe:
+\begin{itemize}
+\item Broadcast mreže (emisija svima)
+\item Point-to-point (između 2 računara)
+\end{itemize} 
+Pored ove logičke podele računare fizički možemo povezivati različitim medijumima za prenos. Tu takođe možemo ostvariti neformalnu podelu na dve kategorije mreža u zavisnosti od vrste medijuma koji se koristi pri razmeni podataka:
+\begin{itemize}
+\item Žične računarske mreže (fizički medijum, npr. Bakarni kabl)
+\item Bežične računarske mreže (medijum je etar, vazduh))
+\end{itemize} 
+
+\section{Bežične mreže}
+Mobilni telefoni dizajnirani su na način koji predviđa upotrebu baš bežičnih mreža za međusobnu komunikaciju. Bežične mreže, prema svojoj topologiji možemo razvrstati u tri zasebne kategorije:
+\begin{itemize}
+\item Ad-hoc
+\item Celularne (ćelijske)
+\item Point-to-point
+\end{itemize} 
+    \subsection{Ad-Hoc}
+Uspostavljanje komunikacije među uređajima vrši se direktno, bez unapred obezbeđene infrastrukture. Omogućava se veza „svako sa svakim“ bez pristupnih stanica. Poruka propagira kroz mrežu koristeći čvorove kroz koje prolazi, svaki uređaj u mreži postaje i čvor. Pod terminom čvor, podrazumeva se svako mesto u mreži na kojem može doći do „grananja“, odnosno, promene smera paketa (poruke) koja se prosleđuje kroz mrežu. Ovakve mreže su pogodne za komunikaciju između manjih grupa korisnika na malom rastojanju i primenjuju se uglavnom tamo ge je neophodno brzo uspostaviti privremenu mrežu.\\
+Na slici \ref{fig:adhoc} prikazan je dijagram Ad-Hoc mreže.
+\newpage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
