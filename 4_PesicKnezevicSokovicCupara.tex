@@ -160,28 +160,60 @@ Najčešće se primenjuje za prenos podataka među saobraćajnom signalizacijom,
 
     \subsection{WPAN (Wireless Personal Area Network)}
 Privatne Bežične Mreže (WPAN) služe za povezivanje uređaja koji se nalaze u međusobnoj blizini, takoreći u dosegu prosečne osobe (personal networks). Tipičan domet WPAN mreže je otprilike 10 metara. Često se koriste da umreže kompatibilne uređaje blizu neke centralne lokacije, kao recimo radnog stola. U ovu kategoriju spadaju tehnologije poput: Bluetooth, ZigBee, Infrared, NFC…
+        \subsubsection{Bluetooth}
+Bluetooth je tehnolokija za bežičnu konekciju na malim distancama. Zamisao tehnologije jeste da posluži kao zamena za kablove u svakodnevnoj, ličnoj, upotrebi (npr. Za slušalice ili za miš).\\
+Za ostvarivanje Bluetooth komunikacije nije potrebna optička vidljivost između dva uređaja. Funkcioniše u opsegu frekvencija od 2.4 do 2-485 GHz. Brzina prenosa podataka koja se ostvaruje prilikom Bluetooth veze je oko 700 Kb/s dok je gornja granica brzine, pri korišćenju osnovne verzije, 720 Kb/s. Ova granica brzine može biti podignuta sve do 3MB/s korišćenjem određenih tehnika kodiranja signala.\\
+Domet koji ostvaruje Bluetooth veza je otprilike 10 metara. Vredi napomenuti da se brzina podataka smanjuje povećanjem udaljenosti dva uređaja, zbog smetnji koje se javljaju u prenosu signala.\\
+Bluetooth je tehnologija koja koristi AD-Hoc tehniku povezivanja. Naime, formira se mreža od jednog uređaja koji je master uređaj I najviše 7 slave uređaja. Pored ovih primarnih 7, moguće je povezati još dosta uređaja koji nisu aktivani, tzv. “parkirani” uređaji, koji su na čekanju, ukoliko žele da uspostave konekciju, sve dok neki od aktivnih uređaja ne ode u stanje mirovanja I oslobodi mesto. Ovakva konfiguracija naziva se Piconet.\\
+        \subsubsection{Infrared}
+Infrared tehnologija bežičnog prenosa postoji već duži niz godina (duže od većine tehnologija pomenutih u ovom tekstu). Najčešće se sa njom možemo sresti u svakodnevnom životu, na primer gotovo svi daljinski upravljači  koriste baš ovu tehnologiju za komunikaciju (recimo sa televizorima). Danas se infrared može videti i u mobilnim telefonima, mada upotreba ove tehnologije nije toliko zastupljena u toj sferi.\\
+Infrared koristi infra crvene zrake za razmenu podataka između uređaja. Ona omogućava veće brzine od Bluetooth konekcije, koje dosežu od 10 Mbps do 16 Mbps.
+Kao što se može naslutiti, infrared zahteva optičku vidljivost između dva uređaja i komunikacija ne može da se proseže kroz fizičke prepreke. Može se koristiti „direktnim pogledom“ među uređajima, ali u nekim situacijama, signal se može prenositi i odbijanjem od neke prepreke (recimo zida). Usmeren način komunikacije omogućava pokriće distance od oko 3 metra, dok difuzioni način može da pokriva čitavu prostoriju sličnih dimenzija. \\
+Ova tehnologija pruža bezbednu i jeftinu zamenu za kablove. Moguće ju je prilagoditi različitim okruženjima i funkcijama koje treba da ispuni.\\
+
+        \subsubsection{NFC}
+Near-field communication (NFC) predstavlja tehnologiju kratkog opsega koja koristi indukciju magnetnog polja za komunikaciju između uređaja kada se dodiruju ili se nalaze na distanci od nekoliko centimetara jedan od drugog. Ovakva komunikacija najčešće uključuje autentikaciju kreditnih kartica, prenos malih datoteka ili brzu inicijalizaciju neke druge tehnologije (sa većim mogućnostima komunikacije).\\
+Gotovo svi moderni telefoni podržavaju NFC čipove I aplikacije, kao što su aplikacije za plaćanje bez potrebe za fizičkom kopijom kreditne kartice (Google Pay, Apple Pay). Originalno je bila zamišljena kao tehnologija koja će biti korišćena za razmenu datoteka na mobilnim telefonima ali zbog ograničavajućih faktora (poput brzine prenosa I veoma male udaljenosti koju pokriva), zamenjena je drugim tehnologijama.\\
+NFC ograničava komunikaciju na veoma malu razdaljinu. Korisnik mora da dovede uređaj na distance od oko maksimalnih 10 centimetara. Međutim, veoma važna karakteristika NFC tehnologije jeste to da ne postoji potreba za napajanjem prilikom korišćenja osnovnih funkcija ove tehnologije (slušanje I odgovaranje na poruke). Ovo omogućava primenu ove tehnologije I na uređaje bez baterije, poput kreditnih kartica. \cite{NFC}\\
+
+\section{Zaključak}
+Veoma je očigledno da prenos podataka na modernism telefonima uopšte nije jedinstven ni jednoličan, stoga ne postoji ni jedna tehnologija koja bi mogla da zadovolji uopšteno sve potrebe a da pritom ostane efikasna u svojoj komunikaciji.\\
+Različite tehnologije, osim sa tehničke strane realizacije komunikacije, korisnicima omogućavaju potpuno različita korisnička iskustva I omogućavaju nesmetanu upotrebu mobilnih telefona u svakodnevnom životu.\\
+Svaku tehnologiju okarakterisali smo sa nekoliko stavki za koje smatramo da su najvažnije pri izboru tehnologije koja će biti korišćena pri komunikaciji. Na ovoj listi, između ostalog nalaze se: brzina prenosa podataka, pouzdanost, domet I spektar primena tehnologije.\\
+Evo tabele sa svim vrenostima:\\
+\begin{center}
+\scalebox{0.9}{%
+    \begin{tabular}{c|c|c|c} 
+      \textbf{Vrsta bežičnog prenosa} & \textbf{Brzina prenosa (u Mbps)} & \textbf{Frekvencija (u MHz)} & \textbf{Domet (u metrima)} \\
+      \hline
+      GSM & 0.0096 & 890-960 & do 40000 \\
+      LTE & 50/100 & 1900-2100 & do 8000 \\
+      Bluetooth & 0.7-3 & 2400 & 10 \\
+      Infrared & 10-16 & 3 x $10^{8}$ & 3 \\
+      NFC & 0.4 & 13.56 & 0.1 \\
+      Wi-Fi & do 3500 & 2400/5000 & 70 \\
+      Li-Fi & do 1000 & 2 x $10^{8}$ & 10 \\
+    \end{tabular}
+}
+  \end{center}
 
 
+\addcontentsline{toc}{section}{Literatura}
+\appendix
 
+\iffalse
+\bibliography{seminarski} 
+\bibliographystyle{plain}
+\fi
 
+\begin{thebibliography}
 
+\bibitem[1]{AdHoc} ResearchGate.net \emph{Structure of Wireless Ad Hoc Network}
+\bibitem[2]{GSM} spiseworks.com \emph{What Is GSM (Global System for Mobile Communications)? Meaning, Working, Architecture, and Applications} 
+\bibitem[3]{NFC} techtarget.com \emph{Near-field communication (NFC)}
+\bibitem[4]{} bpa.edu.rs \emph{Rašunarske mreže}
+\bibitem[5]{wireless} Computer Controls \emph{Wireless Networks}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\end{thebibliography}
 
 \end{document}
